@@ -45,6 +45,83 @@
         }
     }
 
+    function isValidISBN10(isbn_string) {
+        var isbn_num_only = isbn_string.toString().replace(/[^0-9]/g, '');
+        var calculated_checksum_digit;
+        var isbn_base = isbn_num_only.substring(0, 9);
+        var supplied_checksum_digit = isbn_num_only.substring(9, 10);
+        var isbn_working_string = isbn_base;
+        var csumTotal = 0; // The checksum working variable starts at zero
+
+        // if source is less than 9 chars, we make it 9 chars
+        if (isbn_base.length < 9) {
+            var holdString = '000000000' + isbn_base;
+            isbn_base = holdString.substring(holdString.length - 9, holdString.length);
+        }
+
+
+
+        // Calculate the checksum value for the message
+
+        for (var charPos = 0; charPos <= 8; charPos++) {
+            csumTotal = csumTotal + ((charPos + 1) * parseInt(isbn_base.substring(charPos, charPos + 1)));
+
+        }
+
+        // Calculate the checksum digit
+
+        var remainder = csumTotal - parseInt(csumTotal / 11) * 11;
+        if (remainder == 0)
+            calculated_checksum_digit = '0';
+        if (remainder == 10)
+            calculated_checksum_digit = 'X';
+        else
+            calculated_checksum_digit = remainder;
+
+        return calculated_checksum_digit == supplied_checksum_digit;
+    }
+
+    function isValidISBN13(isbn_string) {
+        var isbn_num_only = isbn_string.toString().replace(/[^0-9]/g, '');
+        var calculated_checksum_digit;
+        var isbn_base = isbn_num_only.substring(0, 12);
+        var supplied_checksum_digit = isbn_num_only.substring(12, 13);
+
+        var isbn_working_string = isbn_base;
+
+        // if source is less than 12 chars, we make it 12 chars
+        if (isbn_base.length < 12) {
+            var holdString = '000000000000' + isbn_base;
+            isbn_base = holdString.substring(holdString.length - 12, holdString.length);
+        }
+        var csumTotal = 0; // The checksum working variable starts at zero
+
+        // If the source message string is less than 12 characters long, we make it 12 characters
+
+        // Calculate the checksum value for the message
+
+        for (var charPos = isbn_working_string.length - 1; charPos >= 0; charPos--) {
+            if (charPos / 2 == parseInt(charPos / 2))
+                csumTotal = csumTotal + (parseInt(isbn_working_string.substring(charPos, charPos + 1)));
+            else
+                csumTotal = csumTotal + (3 * parseInt(isbn_working_string.substring(charPos, charPos + 1)));
+        }
+
+        // Calculate the checksum digit
+
+        var remainder = csumTotal - parseInt(csumTotal / 10) * 10;
+        if (remainder == 0)
+            calculated_checksum_digit = 0;
+        else
+            calculated_checksum_digit = 10 - remainder;
+
+        return calculated_checksum_digit == supplied_checksum_digit;
+    }
+
+    function isValidISBN(str) {
+        return (isValidISBN13(str) || isValidISBN10(str));
+    }
+
 
     /*
         ==========================================
@@ -79,159 +156,245 @@
             return year;
         }
 
+        function getSeries() {
+            var search = window.location.search.substr(1);
+            var series = search.replace(/^.*?series=([^\&]+).+$/, '$1');
+            return series;
+        }
+
+        function getFilename() {
+            var search = window.location.search.substr(1);
+            var filename = search.replace(/^.*?filename=([^\&]+).*$/, '$1');
+            return filename;
+        }
+
         function hasSubtitleIngress() {
-        var ingress = document.querySelector('.ingress');
-        if (ingress !== null) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    function getSubtitleFromIngress() {
-        var ingress = document.querySelector('.ingress');
-        if(ingress !== null) {
-            return ingress.textContent;
-        } else {return undefined;}
-        
-    }
-    function hasSubtitleInTitle() {
-        var title = document.querySelector('.research_project > h1').textContent;
-        if (title.match(/[:]/) === null) {
-            return false;
-        } else {
-            return true;    
-        }
-    }
-    function getSubtitleFromTitle() {
-        var title = document.querySelector('.research_project > h1').textContent.trim();
-        var subtitle = title.replace(/^[^:]+:(.+)$/,'$1').trim();
-        return subtitle;
-    }
-    function getMainTitleFromTitle() {
-        var title = document.querySelector('.research_project > h1').textContent.trim();
-        var maintitle = title.replace(/^([^:]+):.+$/,'$1').trim();
-        return maintitle;
-    }
-
-    function hasSubtitle() {
-        if(hasSubtitleIngress()){
-            return true;
-        } else if (hasSubtitleInTitle()) {
-            return true;
-        }
-        return false;
-    }
-    
-    function getTitle() {
-        var title = document.querySelector('.research_project > h1').textContent.trim();
-        if(hasSubtitleIngress()) {
-            return title;
-        } else if(hasSubtitleInTitle()) {
-            return getMainTitleFromTitle();
-        } else {
-            return title;
-        }
-    }
-
-    function getSubtitle() {
-        if(hasSubtitleIngress()) {
-            return getSubtitleFromIngress();
-        } else if(hasSubtitleInTitle()) {
-            return getSubtitleFromTitle();
-        } else {
-            return "";
-        }
-    }
-
-    function getMetaEms() {
-        return document.querySelectorAll('div.publication_right_content_line > em');
-    }
-
-    function getISSN() {
-        var ISSN = "";
-        var possibleMetaEms = getMetaEms();
-        for (var j = 0; j < possibleMetaEms.length; j++) {
-            if(possibleMetaEms[j].textContent == 'ISSN:') {
-                ISSN = possibleMetaEms[j].nextElementSibling.textContent.trim();
-                return ISSN;
-            }
-        }
-        return ISSN;
-    }
-
-    function getISBN() {
-        var ISBN = "";
-        var possibleMetaEms = getMetaEms();
-        for (var j = 0; j < possibleMetaEms.length; j++) {
-            if(possibleMetaEms[j].textContent == 'ISBN:') {
-                ISBN = possibleMetaEms[j].nextElementSibling.textContent.trim();
-                return ISBN;
-            }
-        }
-        return ISBN;
-    }
-
-    function getAuthors() {
-
-        function getPersonFromString(str) {
-            // check if the name is reversed
-            var isReversed = (str.match(",") !== null);
-            var splitter = " ";
-            var parts, first, last;
-
-            if (!isReversed) {
-                parts = str.split(splitter);
-                var len = parts.length;
-                var last = parts[len - 1];
-                var first = "";
-                for (var i = 0; i < len - 1; i++) {
-                    if (i > 0) { first = first + " "; }
-                    first = first + parts[i];
-                }
+            var ingress = document.querySelector('.ingress');
+            if (ingress !== null) {
+                return true;
             } else {
-                splitter = ",";
-                parts = str.split(splitter);
-                last = parts[0];
-                first = parts[1];
+                return false;
             }
-            return { fn: first.trim(), ln: last.trim() };
         }
 
+        function getSubtitleFromIngress() {
+            var ingress = document.querySelector('.ingress');
+            if (ingress !== null) {
+                return ingress.textContent;
+            } else {
+                return undefined;
+            }
 
-        var ems = document.querySelectorAll('em');
-        var current_em;
-        var authorLIs;
-        var authors = [];
-        var current_author = "";
-        var i;
-        for (i = 0; i < ems.length; i++) {
-            current_em = ems[i];
-            //console.log(current_em.innerText);
-            if (current_em.innerText == "Forfatter(e):") {
-                authorLIs = current_em.nextElementSibling.querySelectorAll('li');
-                //return authorLIs;
+        }
 
-                for (i = 0; i < authorLIs.length; i++) {
-                    current_author = authorLIs[i].textContent.trim();
-                    if (current_author !== "") {
-                        console.log(current_author);
-                        authors.push(getPersonFromString(current_author));
-                    }
+        function hasSubtitleInTitle() {
+            var title = document.querySelector('.research_project > h1').textContent;
+            if (title.match(/[:]/) === null) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function getSubtitleFromTitle() {
+            var title = document.querySelector('.research_project > h1').textContent.trim();
+            var subtitle = title.replace(/^[^:]+:(.+)$/, '$1').trim();
+            return subtitle;
+        }
+
+        function getMainTitleFromTitle() {
+            var title = document.querySelector('.research_project > h1').textContent.trim();
+            var maintitle = title.replace(/^([^:]+):.+$/, '$1').trim();
+            return maintitle;
+        }
+
+        function hasSubtitle() {
+            if (hasSubtitleIngress()) {
+                return true;
+            } else if (hasSubtitleInTitle()) {
+                return true;
+            }
+            return false;
+        }
+
+        function getTitle() {
+            var title = document.querySelector('.research_project > h1').textContent.trim();
+            if (hasSubtitleIngress()) {
+                return title;
+            } else if (hasSubtitleInTitle()) {
+                return getMainTitleFromTitle();
+            } else {
+                return title;
+            }
+        }
+
+        function getSubtitle() {
+            if (hasSubtitleIngress()) {
+                return getSubtitleFromIngress();
+            } else if (hasSubtitleInTitle()) {
+                return getSubtitleFromTitle();
+            } else {
+                return "";
+            }
+        }
+
+        function getMetaEms() {
+            return document.querySelectorAll('div.publication_right_content_line > em');
+        }
+
+        function getISSN() {
+            var ISSN = "";
+            var possibleMetaEms = getMetaEms();
+            for (var j = 0; j < possibleMetaEms.length; j++) {
+                if (possibleMetaEms[j].textContent == 'ISSN:') {
+                    ISSN = possibleMetaEms[j].nextElementSibling.textContent.trim();
+                    return ISSN;
                 }
-                return authors;
             }
+            return ISSN;
         }
 
-        //return "Didn't find any authors!";
+        function getISBN() {
+            var ISBN = "";
+            var possibleMetaEms = getMetaEms();
+            for (var j = 0; j < possibleMetaEms.length; j++) {
+                if (possibleMetaEms[j].textContent == 'ISBN:') {
+                    ISBN = possibleMetaEms[j].nextElementSibling.textContent.trim();
+                    return ISBN;
+                }
+            }
+            return ISBN;
+        }
 
-        //return "didn't find any authors!";
-    } // getAuthors()
+        function getAuthors() {
+
+            function getPersonFromString(str) {
+                // check if the name is reversed
+                var isReversed = (str.match(",") !== null);
+                var splitter = " ";
+                var parts, first, last;
+
+                if (!isReversed) {
+                    parts = str.split(splitter);
+                    var len = parts.length;
+                    var last = parts[len - 1];
+                    var first = "";
+                    for (var i = 0; i < len - 1; i++) {
+                        if (i > 0) { first = first + " "; }
+                        first = first + parts[i];
+                    }
+                } else {
+                    splitter = ",";
+                    parts = str.split(splitter);
+                    last = parts[0];
+                    first = parts[1];
+                }
+                return { fn: first.trim(), ln: last.trim() };
+            }
+
+
+            var ems = document.querySelectorAll('em');
+            var current_em;
+            var authorLIs;
+            var authors = [];
+            var current_author = "";
+            var i;
+            for (i = 0; i < ems.length; i++) {
+                current_em = ems[i];
+                //console.log(current_em.innerText);
+                if (current_em.innerText == "Forfatter(e):") {
+                    authorLIs = current_em.nextElementSibling.querySelectorAll('li');
+                    //return authorLIs;
+
+                    for (i = 0; i < authorLIs.length; i++) {
+                        current_author = authorLIs[i].textContent.trim();
+                        if (current_author !== "") {
+                            console.log(current_author);
+                            authors.push(getPersonFromString(current_author));
+                        }
+                    }
+                    return authors;
+                }
+            }
+
+            //return "Didn't find any authors!";
+
+            //return "didn't find any authors!";
+        } // getAuthors()
+
+
+
+        function getPublisherItem() {
+            var rp_ems = document.querySelectorAll('.research_project > em');
+            var pubTypeSegment;
+            if (rp_ems != null) {
+                pubTypeSegment = rp_ems[1].textContent.trim();
+                return pubTypeSegment;
+            }
+        } //getPublisherItem()
+
+        function getResourceUrl() {
+            var urlBase = "http:/\/www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/";//Publikasjoner-norsk/";
+            var resource = urlBase + getFilename();
+            return resource;
+        }
+
+        function genDoi(publisheritem, year, series) {
+            var doi_base = "10.7577/nibr/";
+            series = series.toLowerCase().replace(/^(.+?)er$/, '$1');
+            var num = publisheritem.replace(/^.+?:(\d+).*$/, '$1')
+            var doi = doi_base + series + "/" + year + "/" + num;
+            return doi;
+        }
+
+        function getISSNXML(issn) {
+            return "<issn>" + issn + "</issn>";
+        }
+
+        function getISBNXML(isbn) {
+            return "<isbn>" + isbn + "</isbn>";
+        }
+
+        function getContributorsXML(authors) {
+            var contribXML = "<contributors>";
+            var len = authors.length;
+
+            var sequence = ' sequence="first"';
+
+            for (var i = 0; i < authors.length; i++) {
+                var author = authors[i];
+                if (i > 0) {
+                    sequence = ' ';
+                }
+                var person_name = '<person_name' + sequence + ' contributor_role="author">';
+                person_name += '<given_name>' + author.fn + '</given_name>';
+                person_name += '<surname>' + author.ln + '</surname>';
+                person_name += '</person_name>';
+                contribXML += person_name;
+            }
+
+            contribXML += "</contributors>";
+            return contribXML;
+        }
+
         metadata.title = getTitle();
         metadata.subtitle = getSubtitle();
         metadata.year = getYear();
         metadata.authors = getAuthors();
         metadata.issn = getISSN();
         metadata.isbn = getISBN();
+        metadata.isbn_valid = isValidISBN(metadata.isbn);
+        metadata.publisheritem = getPublisherItem();
+        metadata.series = getSeries();
+        metadata.resource = getResourceUrl();
+        metadata.xml = {};
+        metadata.doi = genDoi(metadata.publisheritem, metadata.year, metadata.series);
+        metadata.xml.doi_data = "<doi_data><doi>" + metadata.doi + "</doi>" + "<resource>" + metadata.resource + "</resource></doi_data>";
+        metadata.xml.publisher = '<publisher><publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name><publisher_place>Oslo</publisher_place></publisher>';
+        metadata.xml.publication_date = '<publication_date media_type="print"><year>' + metadata.year + '</year></publication_date>';
+        metadata.xml.issn = getISSNXML(metadata.issn);
+        metadata.xml.isbn = getISBNXML(metadata.isbn);
+        metadata.xml.contributors = getContributorsXML(metadata.authors);
         console.log(metadata);
     }
 
