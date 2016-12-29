@@ -309,7 +309,7 @@
                     for (i = 0; i < authorLIs.length; i++) {
                         current_author = authorLIs[i].textContent.trim();
                         if (current_author !== "") {
-                            console.log(current_author);
+                            //console.log(current_author);
                             authors.push(getPersonFromString(current_author));
                         }
                     }
@@ -334,7 +334,7 @@
         } //getPublisherItem()
 
         function getResourceUrl() {
-            var urlBase = "http:/\/www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/";//Publikasjoner-norsk/";
+            var urlBase = "http:/\/www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/";
             var resource = urlBase + getFilename();
             return resource;
         }
@@ -352,7 +352,12 @@
         }
 
         function getISBNXML(isbn) {
-            return "<isbn>" + isbn + "</isbn>";
+            if(isValidISBN) {
+                return '<isbn>' + isbn + '</isbn>';    
+            } else {
+                return '<isbn control_digit="FAIL">' + isbn + '</isbn>';
+            }
+            
         }
 
         function getContributorsXML(authors) {
@@ -377,6 +382,46 @@
             return contribXML;
         }
 
+        function getTitlesXML(metadata_obj){
+            var title = metadata_obj.title;
+            var subtitle = metadata_obj.subtitle;
+            var titles = '<titles><title>' + title + '</title>';
+            if(subtitle != "") {
+                titles += '<subtitle>' + subtitle + '</subtitle>';
+            }
+            titles += '</titles>';
+            return titles;
+        }
+
+        function getReportPaperXML(metadata_obj) {
+            var str = '<report-paper><report-paper_series_metadata language="no">';
+            str += getSeriesMetaXML(metadata_obj);
+            str += metadata_obj.xml.contributors;
+            str += metadata_obj.xml.titles;
+            str += metadata_obj.xml.publication_date;
+            str += metadata_obj.xml.publisher;
+            str += metadata_obj.xml.doi_data;
+            str += '</report-paper_series_metadata></report-paper>';
+            return str;
+        }
+
+        function getSeriesMetaXML(metadata_obj) {
+            var series_title ="";
+            var str = "<series_metadata><titles><title>";
+            switch (metadata_obj.series) {
+                case 'Rapporter':
+                    series_title = 'NIBR Rapport';
+                break;
+                case 'Notater':
+                    series_title = 'NIBR Notat';
+                break;
+            }
+            str += series_title + '</title></titles>' + metadata_obj.xml.issn + '</series_metadata>';
+            return str;
+        }
+
+
+
         metadata.title = getTitle();
         metadata.subtitle = getSubtitle();
         metadata.year = getYear();
@@ -395,6 +440,8 @@
         metadata.xml.issn = getISSNXML(metadata.issn);
         metadata.xml.isbn = getISBNXML(metadata.isbn);
         metadata.xml.contributors = getContributorsXML(metadata.authors);
+        metadata.xml.titles = getTitlesXML(metadata);
+        metadata.xml.reportPaper = getReportPaperXML(metadata);
         console.log(metadata);
     }
 
