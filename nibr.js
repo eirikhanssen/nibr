@@ -19,9 +19,24 @@
 
 (function nibr() {
     var url = window.location.href;
-    var open_delay_ms = 100;
-    var close_delay_ms = 100000;
-    console.log("Start nibr extractor - mine metadata for DOI submission");
+    var open_delay_ms = 20;
+    var close_delay_ms = 3000;
+    var closepage;
+
+    function kill() {
+        window.close();
+    }
+
+    function closePage() {
+        var status = document.querySelector('body').getAttribute('data-status');
+
+        if (status == null) {
+            //closepage = window.setTimeout(kill, close_delay_ms);
+        } else {
+            //window.clearTimeout(closepage);
+        }
+    }
+    //console.log("Start nibr extractor - mine metadata for DOI submission");
 
     /*
         ==========================================
@@ -133,7 +148,9 @@
         nibrPublicationPage();
     } else if (isNibrLenkesamling(url)) {
         nibrHostPage();
-    } else { console.log('unknown page: ' + url); }
+    } else { 
+        console.log('unknown page: ' + url); 
+    }
 
 
     /*
@@ -146,7 +163,7 @@
         ==========================================
     */
     function nibrPublicationPage() {
-        console.log('nibrPublicationPage');
+        //console.log('nibrPublicationPage');
         window.setTimeout(function() { window.close() }, close_delay_ms);
         var metadata = {};
 
@@ -220,19 +237,19 @@
         function getTitle() {
             var title = document.querySelector('.research_project > h1').textContent.trim();
             if (hasSubtitleIngress()) {
-                return title;
+                return title.replace(/'/g,'^');
             } else if (hasSubtitleInTitle()) {
-                return getMainTitleFromTitle();
+                return getMainTitleFromTitle().replace(/'/g,'^');
             } else {
-                return title;
+                return title.replace(/'/g,'^');
             }
         }
 
         function getSubtitle() {
             if (hasSubtitleIngress()) {
-                return getSubtitleFromIngress();
+                return getSubtitleFromIngress().replace(/'/g,'^');
             } else if (hasSubtitleInTitle()) {
-                return getSubtitleFromTitle();
+                return getSubtitleFromTitle().replace(/'/g,'^');
             } else {
                 return "";
             }
@@ -351,13 +368,28 @@
             return "<issn>" + issn + "</issn>";
         }
 
-        function getISBNXML(isbn) {
-            if(isValidISBN) {
-                return '<isbn>' + isbn + '</isbn>';    
-            } else {
-                return '<isbn control_digit="FAIL">' + isbn + '</isbn>';
+        function isElectronicISBN() {
+            var isElectronic = false;
+            //determine if the isbn is electronic (if there is a pdf download)
+            var download_for_free = document.querySelector('#download_for_free');
+            if(download_for_free != null) {
+                isElectronic = true;
             }
-            
+            return isElectronic;
+        }
+
+        function getISBNXML(meta) {
+            var isbn_xml_string='<isbn media_type="print"';
+            if (!isValidISBN(meta.isbn)) {
+                isbn_xml_string += ' control_digit="FAIL"';
+            }
+            isbn_xml_string += '>' + meta.isbn + '</isbn>';
+
+            if (isElectronicISBN()) {
+                isbn_xml_string.replace(/media_type="print"/,'media_type="electronic"');
+            }
+            return isbn_xml_string;
+
         }
 
         function getContributorsXML(authors) {
@@ -382,11 +414,11 @@
             return contribXML;
         }
 
-        function getTitlesXML(metadata_obj){
+        function getTitlesXML(metadata_obj) {
             var title = metadata_obj.title;
             var subtitle = metadata_obj.subtitle;
             var titles = '<titles><title>' + title + '</title>';
-            if(subtitle != "") {
+            if (subtitle != "") {
                 titles += '<subtitle>' + subtitle + '</subtitle>';
             }
             titles += '</titles>';
@@ -399,6 +431,7 @@
             str += metadata_obj.xml.contributors;
             str += metadata_obj.xml.titles;
             str += metadata_obj.xml.publication_date;
+            str += metadata_obj.xml.isbn;
             str += metadata_obj.xml.publisher;
             str += metadata_obj.xml.doi_data;
             str += '</report-paper_series_metadata></report-paper>';
@@ -406,20 +439,53 @@
         }
 
         function getSeriesMetaXML(metadata_obj) {
-            var series_title ="";
+            var series_title = "";
             var str = "<series_metadata><titles><title>";
             switch (metadata_obj.series) {
                 case 'Rapporter':
                     series_title = 'NIBR Rapport';
-                break;
+                    break;
                 case 'Notater':
                     series_title = 'NIBR Notat';
-                break;
+                    break;
             }
             str += series_title + '</title></titles>' + metadata_obj.xml.issn + '</series_metadata>';
             return str;
         }
 
+        function getId() {
+            var id = window.location.search.substring(1).replace(/.+?&index=(\d+)/,'$1');
+            return id;
+        }
+
+        function ajax_post(meta) {
+            //console.log("xml: " + meta.xml.reportPaper);
+            var statusEl = document.querySelector('#statusEl');
+            var xhr = new XMLHttpRequest();
+            var post_url = "http://localhost/~hanson/nibr/nibr_xhr.php";
+            var post_data = "id=" + meta.id + "&year=" + meta.year + "&series=" + meta.series + "&publisheritem=" + meta.publisheritem + "&filename=" + meta.resource + "&issn=" + meta.issn + "&title=" + meta.title + "&subtitle=" + meta.subtitle + "&isbn=" + meta.isbn + "&isbn_valid=" + meta.isbn_valid + "&xml=" + JSON.stringify(meta.xml.reportPaper);
+            xhr.open("POST", post_url, true);
+            // set the content type header info for sending url encoded vars in the request
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            // access the onreadystatechenge event for the XMLHttpRequest object
+            xhr.onreadystatechange = function() {
+
+                //console.log(xhr.readyState + ", " + xhr.status);
+                var return_data = xhr.responseText;
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    statusEl.style.color = "green";
+                    statusEl.innerHTML = statusEl.innerHTML + return_data;
+                } else {
+                    statusEl.style.color = "red";
+                    document.querySelector('body').setAttribute('data-status','error');
+                    statusEl.innerHTLM = statusEl.innerHTML + return_data;
+                }
+                closePage();
+
+            };
+            xhr.send(post_data);
+            statusEl.innerHTML = statusEl.innerHTML + "</br></br><strong>posted data sendt to server: </strong></br></br>" + post_data + "</br>";
+        }
 
 
         metadata.title = getTitle();
@@ -433,16 +499,35 @@
         metadata.series = getSeries();
         metadata.resource = getResourceUrl();
         metadata.xml = {};
+        metadata.id = getId();
         metadata.doi = genDoi(metadata.publisheritem, metadata.year, metadata.series);
         metadata.xml.doi_data = "<doi_data><doi>" + metadata.doi + "</doi>" + "<resource>" + metadata.resource + "</resource></doi_data>";
         metadata.xml.publisher = '<publisher><publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name><publisher_place>Oslo</publisher_place></publisher>';
         metadata.xml.publication_date = '<publication_date media_type="print"><year>' + metadata.year + '</year></publication_date>';
         metadata.xml.issn = getISSNXML(metadata.issn);
-        metadata.xml.isbn = getISBNXML(metadata.isbn);
+        metadata.xml.isbn = getISBNXML(metadata);
         metadata.xml.contributors = getContributorsXML(metadata.authors);
         metadata.xml.titles = getTitlesXML(metadata);
         metadata.xml.reportPaper = getReportPaperXML(metadata);
-        console.log(metadata);
+        //console.log(metadata);
+
+
+
+
+        // send the data to php now and wait for response to update the status div.
+
+        var statusEl = document.createElement("aside");
+        statusEl.id = "statusEl";
+        statusEl.innerHTML = "processing XHR...</br>";
+        statusEl.style.cssText = "position:fixed; top:0; right:0; bottom:0; width: 98%; margin-top: 3em; margin-bottom: 3em; margin-right: auto; margin-left: auto; opacity: 0.9; border: 3px solid red; color: black; background-color: #dddddd; font-family: sans-serif; padding: 0.5em; font-size: 1.1em; box-shadow: 0 0 5px black;";
+        document.querySelector("body").appendChild(statusEl);
+        statusEl.addEventListener('click', function(event) {
+            event.target.parentNode.removeChild(event.target);
+        }, false);
+
+        console.log("posting: ");
+        //console.log(stringified);
+        ajax_post(metadata);
     }
 
 
@@ -454,16 +539,14 @@
         ==========================================
     */
     function nibrHostPage() {
-        console.log('nibrHostPage');
-
-        var open_delay_ms = 100000;
+        //console.log('nibrHostPage');
 
         function openPages(nodelist, index) {
-            console.log("openPages: ", index);
+            //console.log("openPages: ", index);
             var len = nodelist.length;
 
             if (index < nodelist.length) {
-                window.open(nodelist[index].getAttribute('href'));
+                window.open(nodelist[index].getAttribute('href') + '&index=' + (index+1));
                 var newindex = index + 1;
                 window.setTimeout(function() {
                     openPages(nodelist, newindex);
@@ -474,7 +557,7 @@
 
         var publication_link_nodes = document.querySelectorAll('.nibr-publications a');
 
-        openPages(publication_link_nodes, publication_link_nodes.length - 1);
+        openPages(publication_link_nodes,0);
 
     } // nibrHostPage()
 
