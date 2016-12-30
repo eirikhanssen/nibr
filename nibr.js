@@ -176,6 +176,15 @@
         function getSeries() {
             var search = window.location.search.substr(1);
             var series = search.replace(/^.*?series=([^\&]+).+$/, '$1');
+
+            var publisheritem = getPublisherItem();
+
+            if(publisheritem.match(/(NIBR\s+(P|p)rosjektrapport)/) != null) {
+                series = "Prosjektrapport";
+            } else if(publisheritem.match((/(amarbeidsrapport)|(Joint\s+(R|r)eport)/)) != null) {
+                series = "Samarbeidsrapport";
+            }
+
             return series;
         }
 
@@ -443,10 +452,16 @@
             var str = "<series_metadata><titles><title>";
             switch (metadata_obj.series) {
                 case 'Rapporter':
-                    series_title = 'NIBR Rapport';
+                    series_title = 'NIBR rapport';
                     break;
                 case 'Notater':
-                    series_title = 'NIBR Notat';
+                    series_title = 'NIBR notat';
+                    break;
+                case 'Samarbeidsrapport':
+                    series_title = 'NIBR samarbeidsrapport';
+                    break;
+                case 'Prosjektrapport':
+                    series_title = 'NIBR prosjektrapport';
                     break;
             }
             str += series_title + '</title></titles>' + metadata_obj.xml.issn + '</series_metadata>';
