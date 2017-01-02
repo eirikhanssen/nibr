@@ -410,7 +410,7 @@
             for (var i = 0; i < authors.length; i++) {
                 var author = authors[i];
                 if (i > 0) {
-                    sequence = ' ';
+                    sequence = ' sequence="additional"';
                 }
                 var person_name = '<person_name' + sequence + ' contributor_role="author">';
                 person_name += '<given_name>' + author.fn + '</given_name>';
@@ -435,7 +435,7 @@
         }
 
         function getReportPaperXML(metadata_obj) {
-            var str = '<report-paper><report-paper_series_metadata language="no">';
+            var str = '<report-paper><!-- local_id: ' + metadata_obj.id + ' --><report-paper_series_metadata language="no">';
             str += getSeriesMetaXML(metadata_obj);
             str += metadata_obj.xml.contributors;
             str += metadata_obj.xml.titles;
@@ -452,13 +452,13 @@
             var str = "<series_metadata><titles><title>";
             switch (metadata_obj.series) {
                 case 'Rapporter':
-                    series_title = 'NIBR rapport';
+                    series_title = 'NIBR-rapport';
                     break;
                 case 'Notater':
-                    series_title = 'NIBR notat';
+                    series_title = 'NIBR-notat';
                     break;
                 case 'Samarbeidsrapport':
-                    series_title = 'NIBR samarbeidsrapport';
+                    series_title = 'NIBR-samarbeidsrapport';
                     break;
                 case 'Prosjektrapport':
                     series_title = 'NIBR prosjektrapport';
@@ -478,7 +478,7 @@
             var statusEl = document.querySelector('#statusEl');
             var xhr = new XMLHttpRequest();
             var post_url = "http://localhost/~hanson/nibr/nibr_xhr.php";
-            var post_data = "id=" + meta.id + "&year=" + meta.year + "&series=" + meta.series + "&publisheritem=" + meta.publisheritem + "&filename=" + meta.resource + "&issn=" + meta.issn + "&title=" + meta.title + "&subtitle=" + meta.subtitle + "&isbn=" + meta.isbn + "&isbn_valid=" + meta.isbn_valid + "&xml=" + JSON.stringify(meta.xml.reportPaper);
+            var post_data = "id=" + meta.id + "&year=" + meta.year + "&series=" + meta.series + "&publisheritem=" + meta.publisheritem + "&filename=" + meta.resource + "&issn=" + meta.issn + "&title=" + meta.title + "&subtitle=" + meta.subtitle + "&isbn=" + meta.isbn + "&isbn_valid=" + meta.isbn_valid + "&xml=" + meta.xml.reportPaper;
             xhr.open("POST", post_url, true);
             // set the content type header info for sending url encoded vars in the request
             xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
