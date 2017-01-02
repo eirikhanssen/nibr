@@ -1,0 +1,125 @@
+<body title="annnet">
+<report-paper>
+	<!-- local_id: 641 -->
+	<report-paper_series_metadata language="no">
+		<series_metadata>
+			<titles>
+				<title>NIBR-rapport</title>
+			</titles>
+			<issn/>
+		</series_metadata>
+		<contributors>
+			<person_name sequence="first" contributor_role="author">
+				<given_name>Elin</given_name>
+				<surname>Kittelsen</surname>
+			</person_name>
+			<person_name sequence="additional" contributor_role="author">
+				<given_name>Dag Arne</given_name>
+				<surname>Christensen</surname>
+			</person_name>
+			<person_name sequence="additional" contributor_role="author">
+				<given_name>Jacob</given_name>
+				<surname>Aars</surname>
+			</person_name>
+			<person_name sequence="additional" contributor_role="author">
+				<given_name>Gro Sandkjær</given_name>
+				<surname>Hanssen</surname>
+			</person_name>
+			<person_name sequence="additional" contributor_role="author">
+				<given_name>Jan Erling</given_name>
+				<surname>Klausen</surname>
+			</person_name>
+		</contributors>
+		<titles>
+			<title>Evaluering av innbyggerinitiativordningen</title>
+		</titles>
+		<publication_date media_type="print">
+			<year>2010</year>
+		</publication_date>
+		<isbn media_type="print">978-82-7071-862-7</isbn>
+		<publisher>
+			<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+			<publisher_place>Oslo</publisher_place>
+		</publisher>
+		<doi_data>
+			<doi>10.7577/nibr/rapport/2010/Sammendragsrapport NIBR/Rokkansenteret 2010</doi>
+			<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Evaluering-av-innbyggerinitiativordningen</resource>
+		</doi_data>
+	</report-paper_series_metadata>
+</report-paper>
+
+	<report-paper>
+		<!-- local_id: 512 -->
+		<report-paper_series_metadata language="no">
+			<series_metadata>
+				<titles>
+					<title>NIBR-rapport</title>
+				</titles>
+				<issn/>
+			</series_metadata>
+			<contributors>
+				<person_name sequence="first" contributor_role="author">
+					<given_name>Kristian</given_name>
+					<surname>Tronstad</surname>
+				</person_name>
+			</contributors>
+			<titles>
+				<title>Integrering i Skandinavia</title>
+			</titles>
+			<publication_date media_type="print">
+				<year>2016</year>
+			</publication_date>
+			<isbn media_type="print">978-82-8246-163-4</isbn>
+			<publisher>
+				<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+				<publisher_place>Oslo</publisher_place>
+			</publisher>
+			<doi_data>
+				<doi>10.7577/nibr/rapport/2016/IMDi-rapport 2016</doi>
+				<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Integrering-i-Skandinavia</resource>
+			</doi_data>
+		</report-paper_series_metadata>
+	</report-paper>
+
+	<report-paper>
+		<!-- local_id: 616 -->
+		<report-paper_series_metadata language="no">
+			<series_metadata>
+				<titles>
+					<title>NIBR-rapport</title>
+				</titles>
+				<issn/>
+			</series_metadata>
+			<contributors>
+				<person_name sequence="first" contributor_role="author">
+					<given_name>Peris</given_name>
+					<surname>Jones</surname>
+				</person_name>
+				<person_name sequence="additional" contributor_role="author">
+					<given_name>Malcolm</given_name>
+					<surname>Langford</surname>
+				</person_name>
+				<person_name sequence="additional" contributor_role="author">
+					<given_name>Tara</given_name>
+					<surname>Smith</surname>
+				</person_name>
+			</contributors>
+			<titles>
+				<title>End of Programme Report</title>
+				<subtitle>The South Africa Programme</subtitle>
+			</titles>
+			<publication_date media_type="print">
+				<year>2010</year>
+			</publication_date>
+			<isbn media_type="print"/>
+			<publisher>
+				<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+				<publisher_place>Oslo</publisher_place>
+			</publisher>
+			<doi_data>
+				<doi>10.7577/nibr/rapport/2010/NIBR-rapport 2010:?? - ikke opplyst</doi>
+				<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/End-of-Programme-Report-The-South-Africa-Programme</resource>
+			</doi_data>
+		</report-paper_series_metadata>
+	</report-paper>
+</body>

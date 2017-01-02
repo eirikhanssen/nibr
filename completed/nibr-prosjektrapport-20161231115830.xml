@@ -1,0 +1,1649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch
+	xsi:schemaLocation="http://www.crossref.org/schema/4.3.7 http://www.crossref.org/schema/deposit/crossref4.3.7.xsd"
+	version="4.3.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.crossref.org/schema/4.3.7">
+	<head>
+		<doi_batch_id>hioa_20161231115830</doi_batch_id>
+		<timestamp>20161231115830</timestamp>
+		<depositor>
+			<depositor_name>Eirik Hanssen</depositor_name>
+			<email_address>ojs@hioa.no</email_address>
+		</depositor>
+		<registrant>HiOA</registrant>
+	</head>
+	<body>
+
+		<report-paper>
+			<!-- local_id: 407 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Olli</given_name>
+						<surname>Aulaskari</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>INERREG IIIA - Nordkalotten og Kolarctic</title>
+					<subtitle>En ex ante-evaluering</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-305-8</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/04</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/INERREG-IIIA-Nordkalotten-og-Kolarctic</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 408 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Vidar</given_name>
+						<surname>Vanberg</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Detaljhandels- og senteranalyse for fylker, regioner og kommuner i Norge</title>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-344-9</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/24</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Detaljhandels-og-senteranalyse-for-fylker-regioner-og-kommuner-i-Norge</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 409 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Knut</given_name>
+						<surname>Onsager</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Etniske entreprenører og selvsysselsetting</title>
+					<subtitle>En studie innenfor matnæringer i Oslo</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-311-2</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/06</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Etniske-entreprenoerer-og-selvsysselsetting</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 410 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Margrete</given_name>
+						<surname>Gaski</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Sveinung</given_name>
+						<surname>Eikeland</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Næringskombinasjoner 1997-2000</title>
+					<subtitle>Evaluering av driftsstøtten i samiske områder</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-328-7</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/14</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Naeringskombinasjoner-1997-2000</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 411 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Wenche</given_name>
+						<surname>Jonassen</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Fra kompetanse til handling</title>
+					<subtitle>Evaluering av opplæringsprogram for ansatte som arbeider med voldsofre, overgripere og prostituerte</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-325-2</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/13</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Fra-kompetanse-til-handling</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 412 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Geir</given_name>
+						<surname>Orderud</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Innvandring og selvsysselsetting</title>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-338-4</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/15</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Innvandring-og-selvsysselsetting</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 413 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Yngve</given_name>
+						<surname>Carlsson</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>"Somewhere between Venice and "Harry Town"</title>
+					<subtitle>En utredning om stedsidentitet, stedsimage og stedskvalitet i Drammen og Drammensregionen</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-279-5</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/03</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Somewhere-between-Venice-and-Harry-Town</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 414 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Kjell-Arve</given_name>
+						<surname>Harvold</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Medlem globalt - handle lokalt?</title>
+					<subtitle>Om norske kommuners engasjement i ICLEI</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-330-9</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/16</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Medlem-globalt-handle-lokalt</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 416 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Marit</given_name>
+						<surname>Helgesen</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Tore</given_name>
+						<surname>Hansen</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Driftsstyrer i Osloskolen - styring eller bare drift?</title>
+					<subtitle>Evaluering av driftsstyreordningen i Osloskolen</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-336-8</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/18</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Driftsstyrer-i-Osloskolen-styring-eller-bare-drift</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 417 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Frøydis</given_name>
+						<surname>Eidheim</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>BRO-teamet</title>
+					<subtitle>En prosessevaluering av barne- og ungdomspsykiatrisk ressursteam</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-337-6</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/21</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/BRO-teamet</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 418 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Trine</given_name>
+						<surname>Myrvold</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Smått og godt? Om de minste kommunenes evne til å imøtekomme generalistkommunekravet</title>
+					<subtitle>En kunnskapsoversikt  og indikatordiskusjon</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-280-9</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/01</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Smaatt-og-godt-Om-de-minste-kommunenes-evne-til-aa-imoetekomme-generalistkommunekravet</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 419 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Margrete</given_name>
+						<surname>Gaski</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Ivar</given_name>
+						<surname>Lie</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>"Lav terskel, rask oppfølging"</title>
+					<subtitle>Evaluering av ungdomsservicekontorene i Indre Finnmark</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-342-2</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/22</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Lav-terskel-rask-oppfoelging</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 421 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Wenche</given_name>
+						<surname>Jonassen</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>To psykiatere ved hvert lokalsykehus</title>
+					<subtitle>Erfaringer med desentralisert spesialutdanning i psykiatri</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-324-4</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/12</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/To-psykiatere-ved-hvert-lokalsykehus</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 422 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Eva Irene</given_name>
+						<surname>Falleth</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Knut Bjørn</given_name>
+						<surname>Stokke</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Kommune- og økonomiplanlegging</title>
+					<subtitle>Hva gjør kommunene?</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-332-5</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/20</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Kommune-og-oekonomiplanlegging</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 423 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Marit</given_name>
+						<surname>Helgesen</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Elin Haugsgjerd</given_name>
+						<surname>Allern</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Line Nyhagen</given_name>
+						<surname>Predelli</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Mellom konflikt og integrasjon</title>
+					<subtitle>Evaluering av Kontaktutvalget mellom innvandrere og myndighetene</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-320-1</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/11</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Mellom-konflikt-og-integrasjon</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 424 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Marit</given_name>
+						<surname>Helgesen</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Jan Erling</given_name>
+						<surname>Klausen</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Anne Lise</given_name>
+						<surname>Fimreite</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Færre og større bydeler?</title>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-340-6</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/17</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Faerre-og-stoerre-bydeler</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 425 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Lene</given_name>
+						<surname>Schmidt</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Anne-Karine Halvorsen</given_name>
+						<surname>Thorén</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Bebyggelsestyper og bokvalitet i by</title>
+					<subtitle>En studie  av storgårdskvartalet</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-317-1</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/09</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Bebyggelsestyper-og-bokvalitet-i-by</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 426 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Trine</given_name>
+						<surname>Myrvold</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Sissel</given_name>
+						<surname>Hovik</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Er det størrelsen det kommer an på? Små kommuners evne til å ivareta generalistkommunekravet</title>
+					<subtitle>En case-studie av fire små kommuner</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-319-8</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/08</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Er-det-stoerrelsen-det-kommer-an-paa-Smaa-kommuners-evne-til-aa-ivareta-generalistkommunekravet</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 427 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Sissel</given_name>
+						<surname>Hovik</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Trine</given_name>
+						<surname>Myrvold</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Kommunale oppgaver - hvorfor varierer omfang og kvalitet?</title>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-346-5</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/19</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Kommunale-oppgaver-hvorfor-varierer-omfang-og-kvalitet</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 428 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Jan Erling</given_name>
+						<surname>Klausen</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Bydelsråd i København</title>
+					<subtitle>En analyse av folkeavstemningen</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-278-7</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/02</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Bydelsraad-i-Koebenhavn</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 429 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Tom</given_name>
+						<surname>Johnstad</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Eierskap og organisering</title>
+					<subtitle>Utfordringer innen landbrukssamvirket</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-345-7</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/25</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Eierskap-og-organisering</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 430 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Kjetil</given_name>
+						<surname>Sørlie</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Kommunedemografi - klassifisering og karakteristikk av befolkningsutviklingen i kommunene</title>
+					<subtitle>Utsikter for det første tiåret på 2000-tallet</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-326-0</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/05</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Kommunedemografi-klassifisering-og-karakteristikk-av-befolkningsutviklingen-i-kommunene</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 431 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Vigdis</given_name>
+						<surname>Nygaard</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Foreign trade in the Barents region</title>
+					<subtitle>Experienced by Russian companies in the Murmansk region: report from the RUSCA-project</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2001</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-327-9</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2001/07</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Foreign-trade-in-the-Barents-region</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 770 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Sten-Erik</given_name>
+						<surname>Clausen</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>An-Magritt</given_name>
+						<surname>Jensen</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Barndom - forvandling uten forhandling?</title>
+					<subtitle>Samboerskap, foreldreskap og søskenskap</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-233-7</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/06</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Barndom-forvandling-uten-forhandling</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 771 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Vidar</given_name>
+						<surname>Vanberg</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Etableringsbetingelser og markedskunnskap</title>
+					<subtitle>Detaljhandel og annen privat tjenesteyting</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-222-1</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/13</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Etableringsbetingelser-og-markedskunnskap</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 772 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Sten-Erik</given_name>
+						<surname>Clausen</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Barnevern i Norge 1990-1997</title>
+					<subtitle>En longitudinell studie basert på registerdata</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-260-4</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/07</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Barnevern-i-Norge-1990-1997</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 773 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Ivar</given_name>
+						<surname>Lie</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Vigdis</given_name>
+						<surname>Nygaard</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Reindriftsforvaltningen</title>
+					<subtitle>En evaluering av organisasjon og virksomhet</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-253-1</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/16</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Reindriftsforvaltningen</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 774 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Peter</given_name>
+						<surname>Arbo</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Bjørnar</given_name>
+						<surname>Sæther</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Jan</given_name>
+						<surname>Mønnesland</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Knut</given_name>
+						<surname>Onsager</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Kjetil</given_name>
+						<surname>Sørlie</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Høgskolenes regionale betydning</title>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-215-9</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/09</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Hoegskolenes-regionale-betydning</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 775 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Ståle</given_name>
+						<surname>Opedal</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Helge Strand</given_name>
+						<surname>Østtveiten</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>"Full kontroll?"</title>
+					<subtitle>En studie av kontroll- og tilsynsordningene i kommuner og fylkeskommuner</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-216-7</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/10</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Full-kontroll</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 776 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Dag</given_name>
+						<surname>Juvkam</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Kjetil</given_name>
+						<surname>Sørlie</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Demografiske hovedtrekk i fire storbyregioner</title>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-205-1</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/04</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Demografiske-hovedtrekk-i-fire-storbyregioner</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 778 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Marte</given_name>
+						<surname>Feiring</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>DELTA-senteret</title>
+					<subtitle>Evaluering av et kompetansesenter innen tilgjengelighet og deltakelse for funksjonshemmede</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-262-0</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/12</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/DELTA-senteret</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 779 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Elisabeth</given_name>
+						<surname>Angell</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Mellom børs og akademia</title>
+					<subtitle>Evaluering og framtidig organisering av "akademiske lærlinger"</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-275-2</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/21</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Mellom-boers-og-akademia</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 780 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Inger-Lise</given_name>
+						<surname>Saglie</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Aud</given_name>
+						<surname>Tennøy</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Stedsananlyser i planlegging</title>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-261-2</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/19</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Stedsananlyser-i-planlegging</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 781 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Sveinung</given_name>
+						<surname>Eikeland</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Steinar</given_name>
+						<surname>Johansen</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Regional utvikling på 1990-tallet</title>
+					<subtitle>Oppsummering av "klassiske analyser"</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-259-0</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/15</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Regional-utvikling-paa-1990-tallet</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 782 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Arild</given_name>
+						<surname>Røkenes</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Samisk videregående opplæring under reform 94</title>
+					<subtitle>Dimensjonering og lærerkompetanse, gjennomstrømming, oppfølgingstjenesten, organisering og samarbeid</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-212-4</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/08</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Samisk-videregaaende-opplaering-under-reform-94</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 783 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Thomas</given_name>
+						<surname>Haaland</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Vold - konflikt og gjengdannelse</title>
+					<subtitle>En undersøkelse blant ungdom i fire byer</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-224-8</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/14</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Vold-konflikt-og-gjengdannelse</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 784 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Odd Eirik</given_name>
+						<surname>Arnesen</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Partners in conservation?</title>
+					<subtitle>Participation in natural resource management</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-213-2</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/02</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Partners-in-conservation</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 785 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Bergljot</given_name>
+						<surname>Baklien</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Yngve</given_name>
+						<surname>Carlsson</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Helse og kultur</title>
+					<subtitle>Prosessevaluering av en nasjonal satsing på kultur som helsefremmende virkemiddel</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-228-0</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/11</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Helse-og-kultur</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 786 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Sigrid</given_name>
+						<surname>Skålnes</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Margrete</given_name>
+						<surname>Gaski</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Tospråkling tjenesteyting</title>
+					<subtitle>Brukerundersøkelse i forvaltningsområdet for Samelovens språkregler</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-252-3</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/17</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Tospraakling-tjenesteyting</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 787 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Arvid</given_name>
+						<surname>Strand</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Bjørn</given_name>
+						<surname>Moen</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Lokal samordning - finnes den?</title>
+					<subtitle>Studier av forsøk på lokal areal- og transportplanlegging i tre regioner</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-258-2</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/20</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Lokal-samordning-finnes-den</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 788 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Stig</given_name>
+						<surname>Karlstad</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Elkem Aluminium Mosjøen</title>
+					<subtitle>Regionale konsekvenser av endringer i virksomheten</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-273-6</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/22</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Elkem-Aluminium-Mosjoeen</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 789 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Bjørn</given_name>
+						<surname>Moen</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Arvid</given_name>
+						<surname>Strand</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>"Når kapasitetsproblemer i vegsystemet oppstår, skal andre..."</title>
+					<subtitle>(RPR-SAT, pkt. 3.5)</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-209-4</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/01</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Naar-kapasitetsproblemer-i-vegsystemet-oppstaar-skal-andre</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 790 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Ken</given_name>
+						<surname>Jones</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Fysisk aktivitet i nærmiljøet</title>
+					<subtitle>Evaluering av Kulturdepartementets nærmiljøanleggsordning</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-274-4</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/18</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Fysisk-aktivitet-i-naermiljoeet</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 791 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Christopher</given_name>
+						<surname>Bratt</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Ungdomsundersøkelse i Drammen 1999</title>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-211-6</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/05</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Ungdomsundersoekelse-i-Drammen-1999</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+		<report-paper>
+			<!-- local_id: 792 -->
+			<report-paper_series_metadata language="no">
+				<series_metadata>
+					<titles>
+						<title>NIBR prosjektrapport</title>
+					</titles>
+					<issn>0808-5390</issn>
+				</series_metadata>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Anne-Karine Halvorsen</given_name>
+						<surname>Thorén</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>Jon</given_name>
+						<surname>Guttu</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>John</given_name>
+						<surname>Pløger</surname>
+					</person_name>
+				</contributors>
+				<titles>
+					<title>Arealnormer</title>
+					<subtitle>Virkemiddel for livskvalitet i fysisk planlegging</subtitle>
+				</titles>
+				<publication_date media_type="print">
+					<year>2000</year>
+				</publication_date>
+				<isbn media_type="print">82-7071-214-0</isbn>
+				<publisher>
+					<publisher_name>By- og regionforskningsinstituttet NIBR</publisher_name>
+					<publisher_place>Oslo</publisher_place>
+				</publisher>
+				<doi_data>
+					<doi>10.7577/nibr/prosjektrapport/2000/03</doi>
+					<resource>http://www.hioa.no/Om-HiOA/Senter-for-velferds-og-arbeidslivsforskning/NIBR/Publikasjoner/Publikasjoner-norsk/Arealnormer</resource>
+				</doi_data>
+			</report-paper_series_metadata>
+		</report-paper>
+
+	</body>
+
+</doi_batch>
